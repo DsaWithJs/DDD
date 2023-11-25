@@ -1,0 +1,3 @@
+https://javascript.plainenglish.io/type-challenges-implement-the-objectkeypaths-utility-type-e49e79bb4b48
+
+https://levelup.gitconnected.com/level-up-your-typescript-5-common-errors-typescript-developers-face-and-how-to-solve-them-89b25211d710

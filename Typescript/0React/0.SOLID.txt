@@ -1,0 +1,3 @@
+https://blog.stackademic.com/solid-principles-and-dependency-injection-in-react-typescript-1be7084e3a6c
+
+https://medium.com/@robson.trasel/princ%C3%ADpios-solid-com-typescript-fundamentos-para-um-c%C3%B3digo-de-qualidade-370b95df6393

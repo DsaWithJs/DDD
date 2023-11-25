@@ -1,0 +1,3 @@
+https://medium.com/cyberark-engineering/just-enough-typescript-for-react-day-to-day-development-even-if-youve-been-fighting-it-for-years-97206075fca0
+
+https://medium.com/@parthgoel007/building-modern-web-applications-with-typescript-and-react-js-5d6606e8d301

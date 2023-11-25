@@ -65,3 +65,9 @@ Beyond strict type checking, TypeScript offers various advanced compiler options
   }
 }
 ```
+
+```txt
+https://navinballa.medium.com/understanding-tsconfig-json-in-detail-typescript-df933e1ce39f
+
+https://medium.com/@jjmayank98/typescript-dependency-or-dev-dependency-cad623dff6d5
+```
