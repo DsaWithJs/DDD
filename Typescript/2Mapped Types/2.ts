@@ -33,3 +33,17 @@ type objBolean = {
     lastname: boolean;
 };
 */
+
+namespace ss {
+  type Boolify<T> = {
+    [K in keyof T]: boolean;
+  };
+
+  type OriginalType = {
+    a: number;
+    b: string;
+  };
+
+  type BooleanType = Boolify<OriginalType>;
+  // Result: { a: boolean, b: boolean }
+}

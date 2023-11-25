@@ -7,3 +7,18 @@ namespace ss {
     console.log(result); // 123
   });
 }
+
+namespace ss {
+  type CoffeeProps = {
+    name: string;
+    type: string;
+  };
+
+  async function requestACoffee(): Promise<CoffeeProps> {
+    console.log("Request a coffee from the coffee-maker-api");
+    return {
+      name: "Black Coffee",
+      type: "Arabica",
+    };
+  }
+}
