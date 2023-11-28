@@ -29,3 +29,17 @@ namespace ss {
   const strings = ["apple", "banana", "orange"];
   const firstString = getFirstElement(strings); // Output: "apple"
 }
+
+namespace ss {
+  function map<T, U>(arr: T[], fn: (arg: T) => U): U[] {
+    const result = [];
+    for (const item of arr) {
+      result.push(fn(item));
+    }
+    return result;
+  }
+
+  const numbers = [1, 2, 3, 4, 5];
+  const doubledNumbers = map(numbers, (n) => n * 2);
+  console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+}

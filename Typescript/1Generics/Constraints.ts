@@ -21,3 +21,14 @@ namespace two {
   const invalidKey = getProperty(person, "email");
   // TypeScript error: Argument of type '"email"' is not assignable to parameter of type 'keyof typeof person'
 }
+
+namespace ss {
+  interface HasName {
+    name: string;
+  }
+  function greet<T extends HasName>(value: T): string {
+    return `Hello, ${value.name}!`;
+  }
+  greet({ name: "John" }); // returns: "Hello, John!"
+  greet({}); // error: Property 'name' is missing in type '{}'
+}

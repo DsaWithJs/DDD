@@ -1,3 +1,13 @@
 https://medium.com/cyberark-engineering/just-enough-typescript-for-react-day-to-day-development-even-if-youve-been-fighting-it-for-years-97206075fca0
 
 https://medium.com/@parthgoel007/building-modern-web-applications-with-typescript-and-react-js-5d6606e8d301
+
+https://medium.com/react-in-the-real-world/5-powerful-patterns-for-cleaner-and-more-maintainable-react-code-d71c37701109
+
+https://javascript.plainenglish.io/utilising-typescript-generics-in-react-components-35e7badb2a14
+
+https://medium.com/@dom.webber/typescript-react-generic-component-typing-d01f59d9375b
+
+https://medium.com/edonec/creating-a-generic-component-with-react-typescript-2c17f8c4386e
+
+https://medium.com/weekly-webtips/typescript-generic-react-components-17c71a64150e

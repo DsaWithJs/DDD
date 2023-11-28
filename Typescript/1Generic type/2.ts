@@ -49,3 +49,4 @@ namespace ss {
   type arr2 = [];
   type head2 = First<arr2>; // never
 }
+

@@ -1,3 +1,15 @@
+/**
+ * In simple terms, generics are a way of writing code that is flexible enough
+ * to work with different types of data.
+ *
+ *
+ * Generics in TypeScript allows us to create functions, classes,
+ * and interfaces that work with a variety of data types.
+ * Instead of specifying a specific data type,
+ * we use a placeholder called a type parameter.
+ * The type parameter represents any type that can be used in place of the placeholder.
+ */
+
 namespace ss {
   // Example 1: Basic generics
   function func1<T>(param1: T): T {

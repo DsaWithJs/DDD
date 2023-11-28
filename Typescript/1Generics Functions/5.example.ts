@@ -19,3 +19,4 @@ function createArrayPair<T, K>(input1: T, input2: K): [T, K] {
 }
 
 createArrayPair("Hello", 10);
+

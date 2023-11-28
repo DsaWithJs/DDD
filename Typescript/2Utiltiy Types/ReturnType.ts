@@ -11,3 +11,12 @@ namespace ss {
   // FunctionReturnType is now equivalent to:
   // { name: string; age: number; }
 }
+
+namespace ss {
+  function greet(name: string): string {
+    return `Hello, ${name}!`;
+  }
+
+  type Greeting = ReturnType<typeof greet>;
+  const greeting: Greeting = "Hello, TypeScript!";
+}
