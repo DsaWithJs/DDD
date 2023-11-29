@@ -1,4 +1,11 @@
- const sendToSqs = <T,>(data: T): T => {
+/**
+ * what does that thing <T> even mean 😨?
+ *like () serves for declaring function parameters, 
+ *<> serves for declaring Type parameters.
+ *So, in this case, T is a type parameter for our function,
+ * */
+
+const sendToSqs = <T,>(data: T): T => {
   // Logic
   console.log(data);
   // return data

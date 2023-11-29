@@ -9,7 +9,13 @@
  * The default type of a generic parameter is similar to the default value of an ordinary function.
  * The corresponding syntax is very simple, that is, <T=Default Type>.
  */
-
+namespace ss {
+  interface User<T = string> {
+    nick: T;
+  }
+  const user1: User = { nick: "User1" };
+  const user2: User<"User2"> = { nick: "User2" };
+}
 namespace ss {
   interface Id<T = string> {
     id: T;

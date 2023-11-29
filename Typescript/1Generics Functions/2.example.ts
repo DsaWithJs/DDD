@@ -30,3 +30,13 @@ namespace ss {
   let str = identity("Hello"); // str is a string
   let arr = identity([1, 2, 3]); // arr is a number array
 }
+
+namespace ss {
+  function returnInput<T>(arg: T): T {
+    return arg;
+  }
+  //Output type will be a string
+  let output = returnInput<string>("Avishek");
+
+  let output1 = returnInput("Avishek");
+}
