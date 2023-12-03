@@ -2,6 +2,29 @@
  * The Record utility type allows you to create an object type with specified keys mapped to a specific value type.
  */
 namespace ss {
+  type Person = {
+    name: string;
+    age: number;
+  };
+
+  type People = Record<string, Person>;
+
+  const people: People = {
+    person1: { name: "John Doe", age: 30 },
+    person2: { name: "Jane Doe", age: 25 },
+  };
+
+  type Keys = "name" | "age" | "hobby" | "email";
+
+  const man1: Record<Keys, string | number> = {
+    name: "bytefer",
+    aeg: 36, // Error
+    hobby: "programming",
+  };
+
+  man1.email = "bytefer@gmail.com"; // Ok
+}
+namespace ss {
   /**
    * Represents a collection of students with student IDs as keys and their corresponding names as values.
    */

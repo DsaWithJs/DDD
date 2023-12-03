@@ -1,4 +1,8 @@
 ```txt
+The keyof operator allows you to extract the keys of an object type as a union of string literals.
+```
+
+```txt
 keyof is an operator in TypeScript that produces a union type of all the keys of an object type. For example:
 ```
 

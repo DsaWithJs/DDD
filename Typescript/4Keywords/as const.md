@@ -1,3 +1,13 @@
+Before TypeScript 5.0, its inference would usually choose a more general type, e.g. infer ["Alice", "Bob", "Eve"] to string[], if you want a more specific type, then must add as const for it:
+
+```ts
+// string[]
+const a = ["Alice", "Bob", "Eve"];
+
+// readonly ["Alice", "Bob", "Eve"]
+const b = ["Alice", "Bob", "Eve"] as const;
+```
+
 ## There are two ways to perform type assertions in TypeScript:
 
 ```ts

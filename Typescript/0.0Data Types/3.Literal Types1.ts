@@ -43,3 +43,22 @@ namespace ss {
 
   const homeKey: I18NKey = "translation.home";
 }
+
+namespace ss {
+  // Defining a string literal type for colors
+  type Color = "red" | "green" | "blue";
+
+  // Using the string literal type to define a variable
+  let favoriteColor: Color = "blue";
+
+  // Defining a string literal type for HTTP methods
+  type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
+
+  // Using the string literal type to define a function argument
+  function makeRequest(url: string, method: HttpMethod) {
+    // ...
+  }
+
+  // Calling the function with a string literal type argument
+  makeRequest("/users", "GET");
+}
