@@ -1,14 +1,18 @@
 import jwksRsa from "jwks-rsa";
 
+import jwksRsa from "jwks-rsa";
+
 jest.mock("jwks-rsa", () => {
   const originalModule = jest.requireActual("jwks-rsa");
   return {
     ...originalModule,
-    __esModule: true, // Use it when dealing with ESModules
-    default: jest.fn().mockImplementation(() => ({
-      ...new originalModule(),
-      getSigningKey: jest.fn(),
-    })),
+    __esModule: true, // This is necessary for ES Modules compatibility
+    default: jest.fn().mockImplementation(() => {
+      return {
+        ...originalModule.default(),
+        getSigningKey: jest.fn(),
+      };
+    }),
   };
 });
 
