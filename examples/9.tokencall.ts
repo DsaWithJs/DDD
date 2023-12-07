@@ -23,3 +23,17 @@ export async function getToken(url: string, reply: FastifyReply): Promise<string
     throw error; // Re-throw the error to stop further execution in the calling function
   }
 }
+
+
+
+fastify.addHook('preHandler', async (request, reply, done) => {
+  const token = await getToken();
+  if (!token) {
+      // If token is not received, send an error response
+      reply.code(401).send({ error: 'Unable to authenticate' });
+      return;
+  }
+  // Add token to request for further use
+  request.token = token;
+  done(); // Proceed to the next handler
+});
