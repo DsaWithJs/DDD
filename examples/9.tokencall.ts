@@ -22,7 +22,7 @@ export async function getToken(url: string, reply: FastifyReply): Promise<string
     }
     throw error; // Re-throw the error to stop further execution in the calling function
   }
-}
+} 
 
 
 
