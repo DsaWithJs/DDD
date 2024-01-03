@@ -7,3 +7,11 @@ const getExpiryTime = (expiration) => {
 
   return daysUntilExpiry;
 };
+
+
+ // Format 'from_date' as 'yyyymmdd'
+ const formattedFromDate = [
+  from_date.getFullYear(),
+  (from_date.getMonth() + 1),
+  from_date.getDate()
+].map(num => String(num).padStart(2, '0')).join('');
